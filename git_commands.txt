@@ -1,7 +1,7 @@
 git config
-Usage: git config ñglobal user.name ì[name]î  
+Usage: git config ‚Äìglobal user.name ‚Äú[name]‚Äù  
 
-Usage: git config ñglobal user.email ì[email address]î
+Usage: git config ‚Äìglobal user.email ‚Äú[email address]‚Äù
 
 git init
 Usage: git init [repository name]
@@ -18,7 +18,7 @@ This command adds a file to the staging area.
 
 
 git commit
-Usage: git commit -m ì[ Type in the commit message]î
+Usage: git commit -m ‚Äú[ Type in the commit message]‚Äù
 
 git diff
 Usage: git diff  
@@ -77,7 +77,7 @@ Usage: git checkout -b [branch name]
 git merge
 Usage: git merge [branch name]  
 
-This command merges the specified branchís history into the current branch.
+This command merges the specified branch‚Äôs history into the current branch.
 
 git push
 Usage: git push [variable name] master  
@@ -89,3 +89,24 @@ git pull
 Usage: git pull [Repository Link]  
 
 This command fetches and merges changes on the remote server to your working directory.
+
+
+git rebase [-i | --interactive] [<options>] [--exec <cmd>] [--onto <newbase>]
+	[<upstream> [<branch>]]
+
+If <branch> is specified, git rebase will perform an automatic git checkout <branch> before doing anything else. Otherwise it remains on the current branch.
+
+
+git-stash
+Use git stash when you want to record the current state of the working directory and the index, but want to go back to a clean working directory. The command saves your local modifications away and reverts the working directory to match the HEAD commit.
+git stash list [<options>]
+git stash show [<stash>]
+git stash drop [-q|--quiet] [<stash>]
+git stash ( pop | apply ) [--index] [-q|--quiet] [<stash>]
+git stash branch <branchname> [<stash>]
+git stash [push [-p|--patch] [-k|--[no-]keep-index] [-q|--quiet]
+	     [-u|--include-untracked] [-a|--all] [-m|--message <message>]
+	     [--] [<pathspec>‚Ä¶‚Äã]]
+git stash clear
+git stash create [<message>]
+git stash store [-m|--message <message>] [-q|--quiet] <commit>
